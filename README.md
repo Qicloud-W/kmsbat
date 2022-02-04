@@ -11,4 +11,6 @@ kmsok.vps.si
 
 kms.moerats.com
 
+kms.v0v.bid
+
 欢迎各路大佬提交激活地址
