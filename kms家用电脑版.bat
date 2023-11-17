@@ -1,33 +1,33 @@
-::Ô­ÎÄÀ´Ô´ https://v0v.bid
+::åŽŸæ–‡æ¥æº https://v0v.bid
 @echo off
-::»ñÈ¡ÔËÐÐÂ·¾¶
+::èŽ·å–è¿è¡Œè·¯å¾„
 cd /d %~dp0
 
 
-::»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
+::èŽ·å–ç®¡ç†å‘˜æƒé™
 %1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
 
 
-::ÅäÖÃBAT¶Ô»°¿òÑùÊ½
-title --ÁèÃÎÔÆKMS±ã½Ý½Å±¾--
+::é…ç½®BATå¯¹è¯æ¡†æ ·å¼
+title --å‡Œæ¢¦äº‘KMSä¾¿æ·è„šæœ¬--
 MODE con: COLS=70 lines=14
 color 0a
 
 
-::²Ëµ¥
+::èœå•
 :begin
 cls
 echo.
 echo.
-echo.     -- KMS ¼¤»î windows ºÍ office ±ã½Ý½Å±¾ --
-echo.     -- ´Ë½Å±¾ÓÉ ÁèÃÎÔÆ Ìá¹©Ö§³Ö --
+echo.     -- KMS æ¿€æ´» windows å’Œ office ä¾¿æ·è„šæœ¬ --
+echo.     -- æ­¤è„šæœ¬ç”± å‡Œæ¢¦äº‘ æä¾›æ”¯æŒ --
 echo.
-echo. --[1]--¼¤»î windows ÏµÍ³£¨Windows 7¡¢8¡¢10¡¢2008¡¢2012¡¢2016£©
-echo. --[2]--¼¤»î office Èí¼þ£¨office 2010¡¢2013¡¢2016¡¢office365£©
-echo. --[3]--ÍË³ö½Å±¾
+echo. --[1]--æ¿€æ´» windows ç³»ç»Ÿï¼ˆWindows 7ã€8ã€10ã€2008ã€2012ã€2016ï¼‰
+echo. --[2]--æ¿€æ´» office è½¯ä»¶ï¼ˆoffice 2010ã€2013ã€2016ã€office365ï¼‰
+echo. --[3]--é€€å‡ºè„šæœ¬
 echo.
 echo.
-choice /c 123 /n /m "ÇëÑ¡Ôñ¡¾1-3¡¿£º"
+choice /c 123 /n /m "è¯·é€‰æ‹©ã€1-3ã€‘ï¼š"
 
 echo. %errorlevel%
 if %errorlevel% == 1 goto set_1
@@ -35,54 +35,54 @@ if %errorlevel% == 2 goto set_2
 if %errorlevel% == 3 goto end
 
 
-::¼¤»îwindowsÏµÍ³
+::æ¿€æ´»windowsç³»ç»Ÿ
 :set_1
 set windowsv=
 call :setwindows
-::ÅäÖÃKMS·þÎñÆ÷µØÖ·
+::é…ç½®KMSæœåŠ¡å™¨åœ°å€
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS·þÎñÆ÷µØÖ·¡¿
+echo. --ã€è¯·è¾“å…¥KMSæœåŠ¡å™¨åœ°å€ã€‘
 echo.
-echo. --Ä¬ÈÏ¼¤»î·þÎñÆ÷Îª£ºkmsok.vps.si
+echo. --é»˜è®¤æ¿€æ´»æœåŠ¡å™¨ä¸ºï¼škms.loli.best
 echo.
-set/p kms1=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
-if not defined kms1 set kms1=kmsok.vps.si
+set/p kms1=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
+if not defined kms1 set kms1=kms.loli.best
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::ÅäÖÃKMS¼¤»îÃÜÔ¿
+::é…ç½®KMSæ¿€æ´»å¯†é’¥
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS¼¤»îÃÜÔ¿¡¿
+echo. --ã€è¯·è¾“å…¥KMSæ¿€æ´»å¯†é’¥ã€‘
 echo.
-echo. --Ä¬ÈÏKMS¼¤»îÃÜÔ¿Îª£º×Ô¶¯Æ¥Åä
+echo. --é»˜è®¤KMSæ¿€æ´»å¯†é’¥ä¸ºï¼šè‡ªåŠ¨åŒ¹é…
 echo.
-set/p winkey=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
+set/p winkey=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
 if not defined winkey set winkey=none
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::¼¤»î
+::æ¿€æ´»
 cls
 echo.
 echo.
 call :checkkms1
 echo.
-echo. ÄúÑ¡ÔñµÄ²Ù×÷ÏµÍ³Îª£º%windowsv%
+echo. æ‚¨é€‰æ‹©çš„æ“ä½œç³»ç»Ÿä¸ºï¼š%windowsv%
 echo.
-echo. --ÕýÔÚ¼¤»î£¬ÕýÔÚÆ¥ÅäÃÜÔ¿£¬ÇëÄÍÐÄµÈ´ý.....
+echo. --æ­£åœ¨æ¿€æ´»ï¼Œæ­£åœ¨åŒ¹é…å¯†é’¥ï¼Œè¯·è€å¿ƒç­‰å¾….....
 		call :%windowsv%
 		cscript //Nologo %windir%\system32\slmgr.vbs /ipk %winkey% >nul
 		cscript //Nologo %windir%\system32\slmgr.vbs /skms %kms1% >nul
 		cscript //Nologo %windir%\system32\slmgr.vbs /ato >nul
-		cscript //Nologo %windir%\system32\slmgr.vbs /xpr | find /i "¼¤»î" >nul && ( echo. & echo. ***** ²Ù×÷ÏµÍ³ ¼¤»î³É¹¦ ***** & echo. ) || ( echo. & echo. ***** ²Ù×÷ÏµÍ³ ¼¤»îÊ§°Ü ***** & echo. )
+		cscript //Nologo %windir%\system32\slmgr.vbs /xpr | find /i "æ¿€æ´»" >nul && ( echo. & echo. ***** æ“ä½œç³»ç»Ÿ æ¿€æ´»æˆåŠŸ ***** & echo. ) || ( echo. & echo. ***** æ“ä½œç³»ç»Ÿ æ¿€æ´»å¤±è´¥ ***** & echo. )
 echo.
-echo. --²Ù×÷ÒÑÍê³É¡£Èç¼¤»îÊ§°ÜÇëÁªÏµÁèÃÎÔÆ ¿Í·þ
+echo. --æ“ä½œå·²å®Œæˆã€‚å¦‚æ¿€æ´»å¤±è´¥è¯·è”ç³»å‡Œæ¢¦äº‘ å®¢æœ
 pause>nul
 goto begin
 
@@ -91,16 +91,16 @@ goto begin
 cls
 echo.
 echo.
-echo.             -- ÇëÑ¡Ôñ windows °æ±¾ --
-echo.     -- ´Ë½Å±¾ÓÉ ÁèÃÎÔÆ  Ìá¹©Ö§³Ö --
+echo.             -- è¯·é€‰æ‹© windows ç‰ˆæœ¬ --
+echo.     -- æ­¤è„šæœ¬ç”± å‡Œæ¢¦äº‘  æä¾›æ”¯æŒ --
 echo.
-echo. --[1]-- ¼¤»î windows 10       --[6]-- ¼¤»î windows 2016
-echo. --[2]-- ¼¤»î windows 8.1      --[7]-- ¼¤»î windows 2012R2
-echo. --[3]-- ¼¤»î windows 8        --[8]-- ¼¤»î windows 2012
-echo. --[4]-- ¼¤»î windows 7        --[9]-- ¼¤»î windows 2008R2
-echo. --[5]-- ¼¤»î windows vista    --[f]-- ¼¤»î windows 2008
+echo. --[1]-- æ¿€æ´» windows 10       --[6]-- æ¿€æ´» windows 2016
+echo. --[2]-- æ¿€æ´» windows 8.1      --[7]-- æ¿€æ´» windows 2012R2
+echo. --[3]-- æ¿€æ´» windows 8        --[8]-- æ¿€æ´» windows 2012
+echo. --[4]-- æ¿€æ´» windows 7        --[9]-- æ¿€æ´» windows 2008R2
+echo. --[5]-- æ¿€æ´» windows vista    --[f]-- æ¿€æ´» windows 2008
 echo.
-choice /c 123456789f /n /m "ÇëÑ¡Ôñ¡¾1-f¡¿£º"
+choice /c 123456789f /n /m "è¯·é€‰æ‹©ã€1-fã€‘ï¼š"
 
 echo. %errorlevel%
 if %errorlevel% == 1 set windowsv=win10
@@ -207,70 +207,70 @@ cscript //Nologo %windir%\system32\slmgr.vbs /ipk 4DWFP-JF3DJ-B7DTH-78FJB-PDRHK 
 goto :EOF
 
 
-::¼¤»îofficeÌ×¼þ
+::æ¿€æ´»officeå¥—ä»¶
 :set_2
 set pathv=
 set officev=
 set url=
 call :setoffice
-::ÅäÖÃKMS·þÎñÆ÷µØÖ·
+::é…ç½®KMSæœåŠ¡å™¨åœ°å€
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS·þÎñÆ÷µØÖ·¡¿
+echo. --ã€è¯·è¾“å…¥KMSæœåŠ¡å™¨åœ°å€ã€‘
 echo.
-echo. --Ä¬ÈÏ¼¤»î·þÎñÆ÷Îª£ºkmsok.vps.si
+echo. --é»˜è®¤æ¿€æ´»æœåŠ¡å™¨ä¸ºï¼škms.loli.best
 echo.
-set/p kms2=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
-if not defined kms2 set kms2=kmsok.vps.si
+set/p kms2=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
+if not defined kms2 set kms2=kms.loli.best
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::ÅäÖÃKMS¼¤»îÃÜÔ¿
+::é…ç½®KMSæ¿€æ´»å¯†é’¥
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS¼¤»îÃÜÔ¿¡¿
+echo. --ã€è¯·è¾“å…¥KMSæ¿€æ´»å¯†é’¥ã€‘
 echo.
-echo. --Ä¬ÈÏKMS¼¤»îÃÜÔ¿Îª£º×Ô¶¯Æ¥Åä
+echo. --é»˜è®¤KMSæ¿€æ´»å¯†é’¥ä¸ºï¼šè‡ªåŠ¨åŒ¹é…
 echo.
-set/p officekey=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
+set/p officekey=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
 if not defined officekey set officekey=none
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::ÅäÖÃoffice°²×°Ä¿Â¼
+::é…ç½®officeå®‰è£…ç›®å½•
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëÕýÈ·µÄoffice°²×°Ä¿Â¼¡¿
+echo. --ã€è¯·è¾“å…¥æ­£ç¡®çš„officeå®‰è£…ç›®å½•ã€‘
 echo.
-echo. --Ä¬ÈÏÎª£ºC:\%pathv%\Microsoft Office\%officev%
+echo. --é»˜è®¤ä¸ºï¼šC:\%pathv%\Microsoft Office\%officev%
 echo.
-set/p url=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
+set/p url=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
 if not defined url set url=C:\%pathv%\Microsoft Office\%officev%
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::¼¤»î
+::æ¿€æ´»
 cls
 echo.
 echo.
 call :checkkms2
 echo.
-echo. --ÕýÔÚ¼¤»î£¬ÇëÉÔºó.....
+echo. --æ­£åœ¨æ¿€æ´»ï¼Œè¯·ç¨åŽ.....
 echo. %url%\ospp.vbs
-if exist "%url%\ospp.vbs" ( echo. & echo. ¼ì²â°²×°Â·¾¶ÅäÖÃÕýÈ·£¬ÄÍÐÄµÈ´ý¼¤»î..... ) else ( goto pathn )
+if exist "%url%\ospp.vbs" ( echo. & echo. æ£€æµ‹å®‰è£…è·¯å¾„é…ç½®æ­£ç¡®ï¼Œè€å¿ƒç­‰å¾…æ¿€æ´»..... ) else ( goto pathn )
 		cd /d %url%
 		call :%officev%
 		cscript //nologo ospp.vbs /inpkey:%officekey% >nul
 		cscript //nologo ospp.vbs /sethst:%kms2% >nul
-		cscript //nologo ospp.vbs /act | find /i "successful" >nul && ( echo. & echo. ***** ¼¤»î³É¹¦ ***** & echo. ) || ( echo. & echo. ***** ¼¤»îÊ§°Ü ***** & echo. )
+		cscript //nologo ospp.vbs /act | find /i "successful" >nul && ( echo. & echo. ***** æ¿€æ´»æˆåŠŸ ***** & echo. ) || ( echo. & echo. ***** æ¿€æ´»å¤±è´¥ ***** & echo. )
 echo.
-echo. --²Ù×÷ÒÑÍê³É¡£Èç¼¤»îÊ§°ÜÇëÁªÏµÁèÃÎÔÆ¿Í·þ
+echo. --æ“ä½œå·²å®Œæˆã€‚å¦‚æ¿€æ´»å¤±è´¥è¯·è”ç³»å‡Œæ¢¦äº‘å®¢æœ
 echo.
 pause>nul
 goto begin
@@ -280,16 +280,16 @@ goto begin
 cls
 echo.
 echo.
-echo.             -- ÇëÑ¡Ôñ Office °æ±¾ --
-echo.     -- ´Ë½Å±¾ÓÉ ÁèÃÎÔÆ  Ìá¹©Ö§³Ö --
+echo.             -- è¯·é€‰æ‹© Office ç‰ˆæœ¬ --
+echo.     -- æ­¤è„šæœ¬ç”± å‡Œæ¢¦äº‘  æä¾›æ”¯æŒ --
 echo.
-echo. --[1]-- ¼¤»î Office 2010 32Î»   --[2]-- ¼¤»î Office 2010 62Î»
-echo. --[3]-- ¼¤»î Office 2013 32Î»   --[4]-- ¼¤»î Office 2013 62Î»
-echo. --[5]-- ¼¤»î Office 2016 32Î»   --[6]-- ¼¤»î Office 2016 62Î»
-echo. --[7]-- ¼¤»î Office 365  32Î»   --[8]-- ¼¤»î Office 365  62Î»
+echo. --[1]-- æ¿€æ´» Office 2010 32ä½   --[2]-- æ¿€æ´» Office 2010 62ä½
+echo. --[3]-- æ¿€æ´» Office 2013 32ä½   --[4]-- æ¿€æ´» Office 2013 62ä½
+echo. --[5]-- æ¿€æ´» Office 2016 32ä½   --[6]-- æ¿€æ´» Office 2016 62ä½
+echo. --[7]-- æ¿€æ´» Office 365  32ä½   --[8]-- æ¿€æ´» Office 365  62ä½
 echo.
 echo.
-choice /c 12345678 /n /m "ÇëÑ¡Ôñ¡¾1-8¡¿£º"
+choice /c 12345678 /n /m "è¯·é€‰æ‹©ã€1-8ã€‘ï¼š"
 
 echo. %errorlevel%
 if %errorlevel% == 1 set officev=office14&set pathv=Program Files (x86)
@@ -328,25 +328,25 @@ cscript ospp.vbs /inpkey:JNRGM-WHDWX-FJJG3-K47QV-DRTFM 1>nul 2>nul
 goto :EOF
 
 
-::¼ì²â KMS·þÎñÆ÷
+::æ£€æµ‹ KMSæœåŠ¡å™¨
 :checkkms1
 cls
 echo.
 echo.
-echo. ÕýÔÚ¼ì²é¼¤»î·þÎñÆ÷£º%kms1% ÇëÉÔºó.....
-ping %kms1% | find /i "À´×Ô" >nul && ( goto :EOF ) || ( goto fail )
+echo. æ­£åœ¨æ£€æŸ¥æ¿€æ´»æœåŠ¡å™¨ï¼š%kms1% è¯·ç¨åŽ.....
+ping %kms1% | find /i "æ¥è‡ª" >nul && ( goto :EOF ) || ( goto fail )
 
 
-::¼ì²â KMS·þÎñÆ÷
+::æ£€æµ‹ KMSæœåŠ¡å™¨
 :checkkms2
 cls
 echo.
 echo.
-echo. ÕýÔÚ¼ì²é¼¤»î·þÎñÆ÷£º%kms2% ÇëÉÔºó.....
-ping %kms2% | find /i "À´×Ô" >nul && ( goto :EOF ) || ( goto fail )
+echo. æ­£åœ¨æ£€æŸ¥æ¿€æ´»æœåŠ¡å™¨ï¼š%kms2% è¯·ç¨åŽ.....
+ping %kms2% | find /i "æ¥è‡ª" >nul && ( goto :EOF ) || ( goto fail )
 
 
-::¼ì²éÊ§°Ü 
+::æ£€æŸ¥å¤±è´¥ 
 :fail
 cls
 echo.
@@ -354,15 +354,15 @@ echo.
 echo.
 echo.
 echo.
-echo. ***** ´íÎó£ºKMS¼¤»î·þÎñÆ÷ÎÞÐ§ *****
+echo. ***** é”™è¯¯ï¼šKMSæ¿€æ´»æœåŠ¡å™¨æ— æ•ˆ *****
 echo.
 echo.
-echo. --²Ù×÷ÒÑÍê³É£¡ÇëÁªÏµÁèÃÎÔÆ ¿Í·þ »ñÈ¡ ×îÐÂÏßÂ·
+echo. --æ“ä½œå·²å®Œæˆï¼è¯·è”ç³»å‡Œæ¢¦äº‘ å®¢æœ èŽ·å– æœ€æ–°çº¿è·¯
 pause>nul
 goto begin
 
 
-::Â·¾¶´íÎó
+::è·¯å¾„é”™è¯¯
 :pathn
 cls
 echo.
@@ -370,14 +370,14 @@ echo.
 echo.
 echo.
 echo.
-echo. ***** ´íÎó£ºOffice°²×°Â·¾¶´íÎó ÇëÖØÐÂÊäÈë *****
+echo. ***** é”™è¯¯ï¼šOfficeå®‰è£…è·¯å¾„é”™è¯¯ è¯·é‡æ–°è¾“å…¥ *****
 echo.
 echo.
-echo. --²Ù×÷ÒÑÍê³É£¡ÇëÁªÏµÁèÃÎÔÆ ¿Í·þ »ñÈ¡ ×îÐÂÏßÂ·
+echo. --æ“ä½œå·²å®Œæˆï¼è¯·è”ç³»å‡Œæ¢¦äº‘ å®¢æœ èŽ·å– æœ€æ–°çº¿è·¯
 pause>nul
 goto begin
 
 
-::¹Ø±Õ½Å±¾
+::å…³é—­è„šæœ¬
 :end
 exit
