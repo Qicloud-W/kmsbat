@@ -1,86 +1,86 @@
-::Ô­ÎÄÀ´Ô´ https://v0v.bid
+::åŽŸæ–‡æ¥æº https://v0v.bid
 @echo off
-::»ñÈ¡ÔËÐÐÂ·¾¶
+::èŽ·å–è¿è¡Œè·¯å¾„
 cd /d %~dp0
 
 
-::»ñÈ¡¹ÜÀíÔ±È¨ÏÞ
+::èŽ·å–ç®¡ç†å‘˜æƒé™
 %1 start "" mshta vbscript:createobject("shell.application").shellexecute("""%~0""","::",,"runas",1)(window.close)&exit
 
 
-::ÅäÖÃBAT¶Ô»°¿òÑùÊ½
-title --ÁèÃÎÔÆKMS±ã½Ý½Å±¾--
+::é…ç½®BATå¯¹è¯æ¡†æ ·å¼
+title --å‡Œæ¢¦äº‘KMSä¾¿æ·è„šæœ¬--
 MODE con: COLS=70 lines=14
 color 0a
 
 
-::²Ëµ¥
+::èœå•
 :begin
 cls
 echo.
 echo.
-echo.     -- KMS windows Servre ±ã½Ý¼¤»î½Å±¾ --
-echo.     -- ´Ë½Å±¾ÓÉ ÁèÃÎÔÆ Ìá¹©Ö§³Ö --
+echo.     -- KMS windows Servre ä¾¿æ·æ¿€æ´»è„šæœ¬ --
+echo.     -- æ­¤è„šæœ¬ç”± å‡Œæ¢¦äº‘ æä¾›æ”¯æŒ --
 echo.
-echo. --[1]--¼¤»î windows ÏµÍ³£¨Windows 10¡¢2019¡¢2016¡¢2012¡¢2008£©
-echo. --[2]--ÍË³ö½Å±¾
+echo. --[1]--æ¿€æ´» windows ç³»ç»Ÿï¼ˆWindows 10ã€2019ã€2016ã€2012ã€2008ï¼‰
+echo. --[2]--é€€å‡ºè„šæœ¬
 echo.
 echo.
-choice /c 123 /n /m "ÇëÑ¡Ôñ¡¾1-3¡¿£º"
+choice /c 123 /n /m "è¯·é€‰æ‹©ã€1-3ã€‘ï¼š"
 
 echo. %errorlevel%
 if %errorlevel% == 1 goto set_1
 if %errorlevel% == 2 goto end
 
 
-::¼¤»îwindowsÏµÍ³
+::æ¿€æ´»windowsç³»ç»Ÿ
 :set_1
 set windowsv=
 call :setwindows
-::ÅäÖÃKMS·þÎñÆ÷µØÖ·
+::é…ç½®KMSæœåŠ¡å™¨åœ°å€
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS·þÎñÆ÷µØÖ·¡¿
+echo. --ã€è¯·è¾“å…¥KMSæœåŠ¡å™¨åœ°å€ã€‘
 echo.
-echo. --Ä¬ÈÏ¼¤»î·þÎñÆ÷Îª£ºkmsok.vps.si
+echo. --é»˜è®¤æ¿€æ´»æœåŠ¡å™¨ä¸ºï¼škms.loli.best
 echo.
-set/p kms1=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
-if not defined kms1 set kms1=kmsok.vps.si
+set/p kms1=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
+if not defined kms1 set kms1=kms.loli.best
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::ÅäÖÃKMS¼¤»îÃÜÔ¿
+::é…ç½®KMSæ¿€æ´»å¯†é’¥
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS¼¤»îÃÜÔ¿¡¿
+echo. --ã€è¯·è¾“å…¥KMSæ¿€æ´»å¯†é’¥ã€‘
 echo.
-echo. --Ä¬ÈÏKMS¼¤»îÃÜÔ¿Îª£º×Ô¶¯Æ¥Åä
+echo. --é»˜è®¤KMSæ¿€æ´»å¯†é’¥ä¸ºï¼šè‡ªåŠ¨åŒ¹é…
 echo.
-set/p winkey=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
+set/p winkey=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
 if not defined winkey set winkey=none
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::¼¤»î
+::æ¿€æ´»
 cls
 echo.
 echo.
 call :checkkms1
 echo.
-echo. ÄúÑ¡ÔñµÄ²Ù×÷ÏµÍ³Îª£º%windowsv%
+echo. æ‚¨é€‰æ‹©çš„æ“ä½œç³»ç»Ÿä¸ºï¼š%windowsv%
 echo.
-echo. --ÕýÔÚ¼¤»î£¬ÕýÔÚÆ¥ÅäÃÜÔ¿£¬ÇëÄÍÐÄµÈ´ý.....
+echo. --æ­£åœ¨æ¿€æ´»ï¼Œæ­£åœ¨åŒ¹é…å¯†é’¥ï¼Œè¯·è€å¿ƒç­‰å¾….....
 		call :%windowsv%
 		cscript //Nologo %windir%\system32\slmgr.vbs /ipk %winkey% >nul
 		cscript //Nologo %windir%\system32\slmgr.vbs /skms %kms1% >nul
 		cscript //Nologo %windir%\system32\slmgr.vbs /ato >nul
-		cscript //Nologo %windir%\system32\slmgr.vbs /xpr | find /i "¼¤»î" >nul && ( echo. & echo. ***** ²Ù×÷ÏµÍ³ ¼¤»î³É¹¦ ***** & echo. ) || ( echo. & echo. ***** ²Ù×÷ÏµÍ³ ¼¤»îÊ§°Ü ***** & echo. )
+		cscript //Nologo %windir%\system32\slmgr.vbs /xpr | find /i "æ¿€æ´»" >nul && ( echo. & echo. ***** æ“ä½œç³»ç»Ÿ æ¿€æ´»æˆåŠŸ ***** & echo. ) || ( echo. & echo. ***** æ“ä½œç³»ç»Ÿ æ¿€æ´»å¤±è´¥ ***** & echo. )
 echo.
-echo. --²Ù×÷ÒÑÍê³É¡£Èç¼¤»îÊ§°ÜÇëÁªÏµÁèÃÎÔÆ ¿Í·þ
+echo. --æ“ä½œå·²å®Œæˆã€‚å¦‚æ¿€æ´»å¤±è´¥è¯·è”ç³»å‡Œæ¢¦äº‘ å®¢æœ
 pause>nul
 goto begin
 
@@ -89,16 +89,16 @@ goto begin
 cls
 echo.
 echo.
-echo.             -- ÇëÑ¡Ôñ windows °æ±¾ --
-echo.     -- ´Ë½Å±¾ÓÉ ÁèÃÎÔÆ  Ìá¹©Ö§³Ö --
+echo.             -- è¯·é€‰æ‹© windows ç‰ˆæœ¬ --
+echo.     -- æ­¤è„šæœ¬ç”± å‡Œæ¢¦äº‘  æä¾›æ”¯æŒ --
 echo.
-echo. --[1]-- ¼¤»î windows 10
-echo. --[2]-- ¼¤»î Windows 2019
-echo. --[3]-- ¼¤»î Windows 2016
-echo. --[4]-- ¼¤»î Windows 2012
-echo. --[5]-- ¼¤»î Windows 2008
+echo. --[1]-- æ¿€æ´» windows 10
+echo. --[2]-- æ¿€æ´» Windows 2019
+echo. --[3]-- æ¿€æ´» Windows 2016
+echo. --[4]-- æ¿€æ´» Windows 2012
+echo. --[5]-- æ¿€æ´» Windows 2008
 echo.
-choice /c 123456789f /n /m "ÇëÑ¡Ôñ¡¾1-5¡¿£º"
+choice /c 123456789f /n /m "è¯·é€‰æ‹©ã€1-5ã€‘ï¼š"
 
 echo. %errorlevel%
 if %errorlevel% == 1 set windowsv=win10
@@ -171,76 +171,76 @@ cscript //Nologo %windir%\system32\slmgr.vbs /ipk WC2BQ-8NRM3-FDDYY-2BFGV-KHKQY 
 cscript //Nologo %windir%\system32\slmgr.vbs /ipk JCKRF-N37P4-C2D82-9YXRT-4M63B 1>nul 2>nul
 goto :EOF
 
-::ÅäÖÃKMS·þÎñÆ÷µØÖ·
+::é…ç½®KMSæœåŠ¡å™¨åœ°å€
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS·þÎñÆ÷µØÖ·¡¿
+echo. --ã€è¯·è¾“å…¥KMSæœåŠ¡å™¨åœ°å€ã€‘
 echo.
-echo. --Ä¬ÈÏ¼¤»î·þÎñÆ÷Îª£ºkmsok.vps.si
+echo. --é»˜è®¤æ¿€æ´»æœåŠ¡å™¨ä¸ºï¼škms.loli.best
 echo.
-set/p kms2=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
-if not defined kms2 set kms2=kmsok.vps.si
+set/p kms2=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
+if not defined kms2 set kms2=kms.loli.best
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
-::ÅäÖÃKMS¼¤»îÃÜÔ¿
+::é…ç½®KMSæ¿€æ´»å¯†é’¥
 cls
 echo.
 echo.
-echo. --¡¾ÇëÊäÈëKMS¼¤»îÃÜÔ¿¡¿
+echo. --ã€è¯·è¾“å…¥KMSæ¿€æ´»å¯†é’¥ã€‘
 echo.
-echo. --Ä¬ÈÏKMS¼¤»îÃÜÔ¿Îª£º×Ô¶¯Æ¥Åä
+echo. --é»˜è®¤KMSæ¿€æ´»å¯†é’¥ä¸ºï¼šè‡ªåŠ¨åŒ¹é…
 echo.
-set/p officekey=--Ä¬ÈÏÖ±½Ó°´»Ø³µ£º
+set/p officekey=--é»˜è®¤ç›´æŽ¥æŒ‰å›žè½¦ï¼š
 if not defined officekey set officekey=none
 echo.
-echo. --ÅäÖÃ³É¹¦£¬°´¡¾ÈÎÒâ¼ü¡¿¼ÌÐø¡£
+echo. --é…ç½®æˆåŠŸï¼ŒæŒ‰ã€ä»»æ„é”®ã€‘ç»§ç»­ã€‚
 pause>nul
 
 
-::¼¤»î
+::æ¿€æ´»
 cls
 echo.
 echo.
 call :checkkms2
 echo.
-echo. --ÕýÔÚ¼¤»î£¬ÇëÉÔºó.....
+echo. --æ­£åœ¨æ¿€æ´»ï¼Œè¯·ç¨åŽ.....
 echo. %url%\ospp.vbs
-if exist "%url%\ospp.vbs" ( echo. & echo. ¼ì²â°²×°Â·¾¶ÅäÖÃÕýÈ·£¬ÄÍÐÄµÈ´ý¼¤»î..... ) else ( goto pathn )
+if exist "%url%\ospp.vbs" ( echo. & echo. æ£€æµ‹å®‰è£…è·¯å¾„é…ç½®æ­£ç¡®ï¼Œè€å¿ƒç­‰å¾…æ¿€æ´»..... ) else ( goto pathn )
 		cd /d %url%
 		call :%officev%
 		cscript //nologo ospp.vbs /inpkey:%officekey% >nul
 		cscript //nologo ospp.vbs /sethst:%kms2% >nul
-		cscript //nologo ospp.vbs /act | find /i "successful" >nul && ( echo. & echo. ***** ¼¤»î³É¹¦ ***** & echo. ) || ( echo. & echo. ***** ¼¤»îÊ§°Ü ***** & echo. )
+		cscript //nologo ospp.vbs /act | find /i "successful" >nul && ( echo. & echo. ***** æ¿€æ´»æˆåŠŸ ***** & echo. ) || ( echo. & echo. ***** æ¿€æ´»å¤±è´¥ ***** & echo. )
 echo.
-echo. --²Ù×÷ÒÑÍê³É¡£Èç¼¤»îÊ§°ÜÇëÁªÏµÁèÃÎÔÆ¿Í·þ
+echo. --æ“ä½œå·²å®Œæˆã€‚å¦‚æ¿€æ´»å¤±è´¥è¯·è”ç³»å‡Œæ¢¦äº‘å®¢æœ
 echo.
 pause>nul
 goto begin
 
 
 
-::¼ì²â KMS·þÎñÆ÷
+::æ£€æµ‹ KMSæœåŠ¡å™¨
 :checkkms1
 cls
 echo.
 echo.
-echo. ÕýÔÚ¼ì²é¼¤»î·þÎñÆ÷£º%kms1% ÇëÉÔºó.....
-ping %kms1% | find /i "À´×Ô" >nul && ( goto :EOF ) || ( goto fail )
+echo. æ­£åœ¨æ£€æŸ¥æ¿€æ´»æœåŠ¡å™¨ï¼š%kms1% è¯·ç¨åŽ.....
+ping %kms1% | find /i "æ¥è‡ª" >nul && ( goto :EOF ) || ( goto fail )
 
 
-::¼ì²â KMS·þÎñÆ÷
+::æ£€æµ‹ KMSæœåŠ¡å™¨
 :checkkms2
 cls
 echo.
 echo.
-echo. ÕýÔÚ¼ì²é¼¤»î·þÎñÆ÷£º%kms2% ÇëÉÔºó.....
-ping %kms2% | find /i "À´×Ô" >nul && ( goto :EOF ) || ( goto fail )
+echo. æ­£åœ¨æ£€æŸ¥æ¿€æ´»æœåŠ¡å™¨ï¼š%kms2% è¯·ç¨åŽ.....
+ping %kms2% | find /i "æ¥è‡ª" >nul && ( goto :EOF ) || ( goto fail )
 
 
-::¼ì²éÊ§°Ü 
+::æ£€æŸ¥å¤±è´¥ 
 :fail
 cls
 echo.
@@ -248,13 +248,13 @@ echo.
 echo.
 echo.
 echo.
-echo. ***** ´íÎó£ºKMS¼¤»î·þÎñÆ÷ÎÞÐ§ *****
+echo. ***** é”™è¯¯ï¼šKMSæ¿€æ´»æœåŠ¡å™¨æ— æ•ˆ *****
 echo.
 echo.
-echo. --²Ù×÷ÒÑÍê³É£¡ÇëÁªÏµÁèÃÎÔÆ ¿Í·þ »ñÈ¡ ×îÐÂÏßÂ·
+echo. --æ“ä½œå·²å®Œæˆï¼è¯·è”ç³»å‡Œæ¢¦äº‘ å®¢æœ èŽ·å– æœ€æ–°çº¿è·¯
 pause>nul
 goto begin
 
-::¹Ø±Õ½Å±¾
+::å…³é—­è„šæœ¬
 :end
 exit
